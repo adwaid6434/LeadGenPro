@@ -1,0 +1,4 @@
+
+# Ignore Python virtual environment and environment files in backend folder
+backend/.venv/
+backend/.env
