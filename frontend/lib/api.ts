@@ -9,7 +9,7 @@ export const api = axios.create({
   },
 });
 
-export const startScrape = async (keyword: str) => {
+export const startScrape = async (keyword: string) => {
   const response = await api.post('/start-scrape', { keyword });
   return response.data;
 };
