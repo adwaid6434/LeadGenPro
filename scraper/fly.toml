@@ -1,0 +1,12 @@
+app = "leadgen-worker"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+  # This tells celery where to run the subprocess
+  SCRAPER_DIR = "/app/scraper"
+
+# Workers don't need HTTP service
